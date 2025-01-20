@@ -11,8 +11,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
-import { ModeToggle } from './theme-mode'
-import DrawerIcon from './drawer'
+// import DrawerIcon from './drawer'
 import { siteConfig } from '../app/config/site'
 import { cn } from '@/lib/utils'
 

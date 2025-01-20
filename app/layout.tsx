@@ -21,19 +21,19 @@ export const metadata: Metadata = {
 };
 
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }: {
+  children: React.ReactNode
+}) {
   return (
-    <>
-      <html lang="en" suppressHydrationWarning>
-        <head />
-        <body>
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body>
+          <main className='container mx-auto px-3 my-5'>
             <Header />
-            <main className='container mx-auto px-3 my-5'>
-              {children}
-            </main>
+            {children}
             <Footer />
-        </body>
-      </html>
-    </>
+          </main>
+      </body>
+    </html>
   )
 }

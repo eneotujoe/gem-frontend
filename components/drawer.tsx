@@ -12,7 +12,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-export function SheetDemo() {
+export function Drawer() {
   return (
     <Sheet>
       <SheetTrigger asChild>

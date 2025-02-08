@@ -1,50 +1,61 @@
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { HiOutlineMenuAlt3 } from "react-icons/hi"
+import Image from 'next/image'
+import Link from "next/link"
+import { usePathname } from 'next/navigation'
 
-export function Drawer() {
+import { siteConfig } from '../app/config/site'
+
+
+export default function DrawerIcon({ className }:any) {
+
+  const pathname = usePathname()
+  const home = pathname === '/'
+
   return (
-    <Sheet>
-      <SheetTrigger asChild>
-        <Button variant="outline">Open</Button>
-      </SheetTrigger>
-      <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
-          <SheetDescription>
-            Make changes to your profile here. Click save when you're done.
-          </SheetDescription>
-        </SheetHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input id="name" value="Pedro Duarte" className="col-span-3" />
+    <div className='px-5'>
+      <Sheet>
+        <SheetTrigger>
+          <HiOutlineMenuAlt3 className={ className } />
+        </SheetTrigger>
+
+        <SheetContent className='bg-white'>
+          <SheetHeader>
+            <SheetTitle className='text-primary'>
+              <Link href="/" className="flex justify-center items-center">
+                <Image
+                  src="gem.svg"
+                  alt="Your Logo"
+                  width={30}
+                  height={30}
+                  className="mr-2"
+                />
+                {/* <span className="text-white font-bold text-xl">{ siteConfig.name }</span> */}
+              </Link>
+            </SheetTitle>
+          </SheetHeader>
+
+          <div className='mx-1'>
+            {siteConfig.mainNav.map((navItem, index) => (
+              <div key={index} className='my-1'>
+                <Button asChild className='block font-extrabold'>
+                  <Link href={navItem.href}>{ navItem.title }</Link>
+                </Button>
+              </div>
+            ))}
           </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input id="username" value="@peduarte" className="col-span-3" />
-          </div>
-        </div>
-        <SheetFooter>
-          <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
-          </SheetClose>
-        </SheetFooter>
-      </SheetContent>
-    </Sheet>
+
+        </SheetContent>
+      </Sheet>
+    </div>
   )
 }
+
+

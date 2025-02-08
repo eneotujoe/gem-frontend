@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
-// import { useScroll, useMotionValueEvent } from "framer-motion";
+import Image from 'next/image'
 
 import {
   NavigationMenu,
@@ -11,7 +11,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
-// import DrawerIcon from './drawer'
+import DrawerIcon from './drawer'
 import { siteConfig } from '../app/config/site'
 import { cn } from '@/lib/utils'
 
@@ -56,20 +56,26 @@ export default function Header() {
     <header className="sticky w-full top-0 z-10">
       <nav className='flex'>
         <div className="flex justify-between items-center min-h-10 w-full  bg-red-600 left-0 px-5 z-10">
-          <div className="uppercase font-bold">{ siteConfig.name }</div>
-
-          <div className="md:flex uppercase">
-          {/* <div className="md:flex hidden uppercase"> */}
-            <Navbar />
+          <div className="uppercase font-bold">
+            <Link href="/" className="flex items-center">
+              <Image
+                src="gem.svg"
+                alt="Your Logo"
+                width={30}
+                height={30}
+                className="mr-2"
+              />
+              {/* <span className="text-white font-bold text-xl">{ siteConfig.name }</span> */}
+            </Link>
           </div>
 
-          {/* <div className='items-center md:flex hidden'>
-            <ModeToggle />
+          <div className="md:flex hidden uppercase">
+            <Navbar />
           </div>
 
           <div className='flex items-center md:hidden'>
             <DrawerIcon />
-          </div> */}
+          </div>
         </div>
       </nav>
     </header>

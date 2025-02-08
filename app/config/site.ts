@@ -10,8 +10,8 @@ export const siteConfig = {
       href: '/',
     },
     {
-      title: 'Media',
-      href: '/media',
+      title: 'Live Stream',
+      href: '/live',
     },
     {
       title: 'Prayer',

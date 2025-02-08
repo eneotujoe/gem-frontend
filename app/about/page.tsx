@@ -1,7 +1,10 @@
-'use client'
-
 import React from 'react'
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "God\'s Empire Ministries - About",
+  description: "Pastor Fortune Ministries",
+}
 
 export default function AboutPage() {
 

@@ -4,6 +4,8 @@ import "./globals.css";
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import { siteConfig } from './config/site'
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,28 +14,31 @@ const geistSans = Geist({
 
 
 export const metadata: Metadata = {
-  title: "God\'s Empire Ministries",
-  description: "Pastor Fortune Ministries",
+  title: {
+    template: `%s | ${siteConfig.name}`,
+    default: `${siteConfig.name}`,
+  },
+  description: `${siteConfig.description}`,
   keywords: ["God\'s Empire Ministries", "Pastor Fortune Marcus Inwon", "GEM", "word of grace"],
   openGraph: {
-    title: "God\'s Empire Ministries",
-    description: "Pastor Fortune Ministries",
-    url: "https://gemhog.org",
+    title: `${siteConfig.name}`,
+    description: `${siteConfig.description}`,
+    url: `${siteConfig.BASE_URL}`,
     siteName: "GEM",
     images: [
       {
         url: "https://res.cloudinary.com/reinforcedai/image/upload/v1739047761/gem/tjrevlh9meu0nuwdyrwd.png",
         width: 1200,
         height: 630,
-        alt: "GEM image",
+        alt: "GEM share image",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "God\'s Empire Ministries",
-    description: "Pastor Fortune Ministries",
+    title: `${siteConfig.name}`,
+    description: `${siteConfig.description}`,
     images: ["https://res.cloudinary.com/reinforcedai/image/upload/v1739047761/gem/tjrevlh9meu0nuwdyrwd.png"],
   },
 };

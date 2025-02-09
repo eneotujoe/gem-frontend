@@ -1,9 +1,11 @@
 import React from 'react'
-import type { Metadata } from "next";
+import type { Metadata } from "next"
+
+import { siteConfig } from '../config/site'
 
 export const metadata: Metadata = {
-  title: "God\'s Empire Ministries - Give",
-  description: "Pastor Fortune Ministries",
+  title: "Give",
+  description: `${siteConfig.description}`,
 }
 
 export default function GivePage() {

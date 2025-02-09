@@ -59,10 +59,10 @@ export default function Header() {
           <div className="uppercase font-bold">
             <Link href="/" className="flex items-center">
               <Image
-                src="gem.svg"
+                src="/gem.png"
                 alt="Your Logo"
-                width={30}
-                height={30}
+                width={45}
+                height={45}
                 className="mr-2"
               />
               {/* <span className="text-white font-bold text-xl">{ siteConfig.name }</span> */}

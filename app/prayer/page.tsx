@@ -2,10 +2,11 @@ import React from 'react'
 import type { Metadata } from "next"
 
 import PrayerForm from '../../components/prayer-form'
+import { siteConfig } from '../config/site'
 
 export const metadata: Metadata = {
-  title: "God\'s Empire Ministries - Prayer",
-  description: "Pastor Fortune Ministries",
+  title: "Prayer",
+  description: `${siteConfig.description}`,
 }
 
 export default function PrayerPage() {

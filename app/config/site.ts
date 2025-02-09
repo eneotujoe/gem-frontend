@@ -2,8 +2,10 @@ export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
   name: 'God\'s Empire Ministries',
-  description: 'God\'s Empire Ministries',
-  url: 'https://gemhog.org',
+  description: 'Pastor Fortune Ministries',
+  BASE_URL: 'https://gemhog.org',
+  share_image_url: 'https://res.cloudinary.com/reinforcedai/image/upload/v1739047761/gem/tjrevlh9meu0nuwdyrwd.png',
+  logo_url: 'https://res.cloudinary.com/reinforcedai/image/upload/v1739047761/gem/tjrevlh9meu0nuwdyrwd.png',
   mainNav: [
     {
       title: 'Home',

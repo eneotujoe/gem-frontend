@@ -31,10 +31,10 @@ export default function DrawerIcon({ className }:any) {
             <SheetTitle className='text-primary'>
               <Link href="/" className="flex justify-center items-center">
                 <Image
-                  src="gem.svg"
+                  src="/gem.png"
                   alt="Your Logo"
-                  width={30}
-                  height={30}
+                  width={50}
+                  height={50}
                   className="mr-2"
                 />
                 {/* <span className="text-white font-bold text-xl">{ siteConfig.name }</span> */}

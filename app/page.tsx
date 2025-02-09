@@ -3,10 +3,12 @@ import type { NextPage } from 'next'
 import type { Metadata } from "next";
 
 import YouTubeEmbed from '@/components/youtube-embed'
+import { siteConfig } from './config/site'
+
 
 export const metadata: Metadata = {
-  title: "God\'s Empire Ministries - Home",
-  description: "Pastor Fortune Ministries",
+  title: "Home",
+  description: `${siteConfig.description}`,
 }
 
 const HomePage: NextPage = () => {

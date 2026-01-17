@@ -35,7 +35,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-6xl mb-4 font-bold text-gray-900">About Us</h1>
           <p className="text-xl md:text-2xl text-gray-500">
-            A Ministry built on faith, hope, and love.
+            A ministry built on faith, hope, and love.
           </p>
         </div>
       </section>

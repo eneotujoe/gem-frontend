@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import {InstagramIcon, FacebookIcon, YoutubeIcon} from "@/components/icons"
@@ -10,24 +9,23 @@ export default function SocialMediaLinks() {
     <div>
       <div className="grid grid-flow-col gap-2 ">
         <Button variant="outline" asChild>
-          <Link href={siteConfig.socialLinks.x} className="bg-primary-foreground">
-            <FacebookIcon size={20} className="text-primary" />
+          <Link href={siteConfig.socialLinks.facebook} className="bg-primary-foreground">
+            <FacebookIcon className="text-primary size-6" />
           </Link>
         </Button>
 
         <Button variant="outline" asChild>
-          <Link href={siteConfig.socialLinks.facebook} className="bg-primary-foreground">
-            <YoutubeIcon size={20} className="text-primary" />
+          <Link href={siteConfig.socialLinks.youtube} className="bg-primary-foreground">
+            <YoutubeIcon className="text-primary size-6" />
           </Link>
         </Button>
 
         <Button variant="outline" asChild>
           <Link href={siteConfig.socialLinks.instagram} className="bg-primary-foreground">
-            <InstagramIcon size={20} className="text-primary" />
+            <InstagramIcon className="text-primary size-6" />
           </Link>
         </Button>
       </div>
     </div>
   )
 }
-

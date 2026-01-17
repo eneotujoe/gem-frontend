@@ -29,9 +29,9 @@ export const siteConfig = {
     },
   ],
   socialLinks: {
-    x: 'https://x.com/',
-    tiktok: 'https://www.tiktok.com/',
     facebook: 'https://web.facebook.com/',
     instagram: 'https://instagram.com/',
+    x: 'https://x.com/',
+    youtube: 'https://www.youtube.com/',
   },
 }

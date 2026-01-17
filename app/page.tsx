@@ -17,7 +17,7 @@ export default function HomePage() {
           <h1 className="text-5xl uppercase md:text-7xl font-black mb-6 tracking-tight text-transparent [-webkit-text-stroke:1px_white]">
             God's Empire Ministries
           </h1>
-          <p className="text-xl md:text-2xl uppercase mb-10 text-white/50">
+          <p className="text-xl md:text-2xl uppercase mb-6 text-white/50">
             The Home of Grace
           </p>
           <p className="text-xl italic mb-10 text-white/50">
@@ -43,7 +43,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 text-primary-foreground">
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5" />
-              <span className="font-medium">Sunday Services: 9:00 AM & 11:00 AM</span>
+              <span className="font-medium">Sunday Services: 9:00 AM</span>
             </div>
             <div className="hidden md:block w-px h-6 bg-primary-foreground/30" />
             <div className="flex items-center gap-2">
@@ -130,7 +130,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Join Us This Sunday</h2>
           <p className="text-xl mb-10 max-w-2xl mx-auto">
-            Experience the splendid atmosphere of praise and worship.
+            An effulgent atmosphere of praise and worship.
           </p>
           <Button asChild size="lg" variant="secondary" className="px-8">
             <Link href="/about">Visit Us</Link>

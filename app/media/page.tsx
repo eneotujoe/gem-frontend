@@ -78,43 +78,20 @@ const MediaPage: NextPage = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-6 text-primary-foreground/80 text-pretty">
-            Join us for worship from anywhere in the world. Experience the presence of God online.
+            Worship with us from any part of the world.
           </p>
         </div>
 
         {/* Video Player Section */}
         <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className="max-w-5xl mx-auto">
-              <div className="relative aspect-video bg-muted rounded-xl overflow-hidden shadow-2xl mb-8">
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-foreground/75">
-                  <div className="w-24 h-24 rounded-full bg-primary/30 flex items-center justify-center mb-6">
-                    <Play className="h-12 w-12 text-white/55 ml-1" />
-                  </div>
-                  <h3 className="text-2xl text-white/55 font-semibold mb-2">Coming Soon</h3>
-                  <p className="text-muted-foreground">Sunday at 9:00 AM EST</p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    The stream will appear here when we go live
-                  </p>
+          <div className="container mx-auto">
+            <div className="relative aspect-video bg-muted rounded-xl overflow-hidden shadow-2xl mb-5">
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-foreground/75">
+                <div className="w-24 h-24 rounded-full bg-primary/30 flex items-center justify-center mb-6">
+                  <Play className="h-12 w-12 text-white/55 ml-1" />
                 </div>
-              </div>
-
-              {/* Service Info */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 bg-gray-400 rounded-xl">
-                <div className="flex items-center gap-4">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="size-4" />
-                    <span>Sunday</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="size-4" />
-                    <span>9:00 AM & 11:00 AM EST</span>
-                  </div>
-                </div>
-                <Button variant="outline" size="sm" className='bg-transparent'>
-                  <Bell className="size-4 mr-2" />
-                  Get Reminders
-                </Button>
+                <h3 className="text-2xl text-white/55 font-semibold mb-2">Coming Soon</h3>
+                <p className="text-muted-foreground">Sunday at 9:00 AM</p>
               </div>
             </div>
           </div>

@@ -60,7 +60,7 @@ export default function GivePage() {
       {/* Donation Form Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Make a Donation</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Tithe, Offering or Donation</h2>
           <p className="text-muted-foreground mb-8">
             Thank you for your faithfulness and generosity. We are praying for God's abundant blessings upon you.
           </p>

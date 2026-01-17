@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import Script from 'next/script'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
@@ -54,6 +55,12 @@ export default function RootLayout({ children }: {
           <Header />
           <main>
             {children}
+            <Script
+              defer
+              src="https://umamiweb.vercel.app/script.js"
+              data-website-id="03665e08-9342-4ae0-8c56-1c6c4e997103"
+              strategy="beforeInteractive"
+            />
           </main>
           <Footer />
       </body>

@@ -100,7 +100,7 @@ export function PrayerRequestForm() {
           </div>
           <h3 className="font-sans text-2xl font-semibold mb-3">Thank You</h3>
           <p className="text-muted-foreground mb-6">
-            Your prayer request has been received. Our prayer team will be lifting up your needs before God.
+            Your prayer request has been sent.
           </p>
           <Button variant="outline" onClick={handleNewRequest}>
             Submit Another Request

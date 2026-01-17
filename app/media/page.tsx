@@ -91,7 +91,7 @@ const MediaPage: NextPage = () => {
                   <div className="w-24 h-24 rounded-full bg-primary/30 flex items-center justify-center mb-6">
                     <Play className="h-12 w-12 text-white/55 ml-1" />
                   </div>
-                  <h3 className="text-2xl text-white/55 font-semibold mb-2">Next Service</h3>
+                  <h3 className="text-2xl text-white/55 font-semibold mb-2">Coming Soon</h3>
                   <p className="text-muted-foreground">Sunday at 9:00 AM EST</p>
                   <p className="text-sm text-muted-foreground mt-2">
                     The stream will appear here when we go live

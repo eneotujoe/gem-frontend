@@ -126,7 +126,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-primary to-purple-600">
+      <section className="py-24 bg-gradient-to-r from-primary to-blue-600">
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Join Us This Sunday</h2>
           <p className="text-xl mb-10 max-w-2xl mx-auto">

@@ -14,7 +14,7 @@ export default function FollowUs() {
           <FacebookIcon size={20} />
         </Link>
 
-        <Link href={siteConfig.socialLinks.tiktok} className='flex justify-around w-full py-5 bg-gray-600 hover:bg-gray-600/50 capitalize'>
+        <Link href={siteConfig.socialLinks.youtube} className='flex justify-around w-full py-5 bg-gray-600 hover:bg-gray-600/50 capitalize'>
           Youtube
           <YoutubeIcon size={20} />
         </Link>
